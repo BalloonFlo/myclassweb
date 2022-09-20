@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="check">
+        <h3>로그인 화면</h3>
+        <table border="1">
+            <tr>
+                <td align="center">아이디</td>
+                <td><input type="text" name="id"> <br></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="서버로 전송">
+                </td>
+            </tr>
+        </table>
+    </form> 
+
+    <hr>
+
+    <h3>회원가입 화면</h3>
+    <form action="mamber">
+        <table border="1">
+            <tr>
+                <td>가입할 id</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td>가입할 pw</td>
+                <td><input type="text" name="pw"> <br></td>
+            </tr>
+            <tr>
+                <td>가입할 name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input type="radio" name="gender" value="man"> 남
+                    <input type="radio" name="gender" value="woman"> 여
+                </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="run"> 달리기
+                    <input type="checkbox" name="hobby" value="youtube"> 동영상보기
+                    <input type="checkbox" name="hobby" value="internet"> 인터넷서핑
+                </td>
+            </tr>
+            <tr>
+                <td>전화번호 통신사</td>
+                <td>
+                    <select name="tel">
+                        <option value="sktelcom">SKT</option>
+                        <option value="etc" selected>알뜰폰</option>
+                        <option value="lgtelecom">LGT</option>
+                    </select>
+                    <input type="number" name="number" placeholder="-없이 숫자로 이어서 쓰세요.">
+                </td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td><input type="date"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
