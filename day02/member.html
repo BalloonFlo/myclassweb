@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+        }
+        #total {
+            width: 800px;
+            height: 800px;
+            background: rgb(239, 173, 147);
+        }
+        #top {
+            width: 800px;
+            height: 100px;
+            background: rgb(246, 202, 208);
+            padding: 2px;
+        }
+        #center {
+            width: 800px;
+            height: 500px;
+            padding: 30px;
+        }
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+        }
+        li:nth-child(2n) {
+            background: lightcoral;
+        }
+        li:nth-child(2n+1) {
+            background: rgb(246, 148, 148);
+        }
+        li:first-child {
+            border-radius: 10px 0px 0px 10px;
+        }
+        li:last-child {
+            border-radius: 0px 10px 10px 0px;
+        }
+        #top2 {
+            background-color: antiquewhite;
+            color: rgb(244, 139, 197);
+            border-radius: 0px 0px 20px 20px;
+            width: 150px;
+            height: 500px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+        .wword {
+            background: whitesmoke;
+            color: rgb(226, 107, 127);
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="member.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="product.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="bbs.html">게시판</a>
+                </li>
+                <li>
+                    <a href="basket.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            장바구니
+        </div>
+        <div id="center">
+            <h3>회원정보 사이트</h3>
+            <hr>
+            <form action="mamber">
+                <table>
+                    <tr>
+                        <td class="wword">가입할 id</td>
+                        <td><input type="text" name="id"></td>
+                    </tr>
+                    <tr>
+                        <td class="wword">가입할 pw</td>
+                        <td><input type="text" name="pw"> <br></td>
+                    </tr>
+                    <tr>
+                        <td class="wword">가입할 name</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td class="wword">성별</td>
+                        <td>
+                            <input type="radio" name="gender" value="man"> 남
+                            <input type="radio" name="gender" value="woman"> 여
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="wword">취미</td>
+                        <td>
+                            <input type="checkbox" name="hobby" value="run"> 달리기
+                            <input type="checkbox" name="hobby" value="youtube"> 동영상보기
+                            <input type="checkbox" name="hobby" value="internet"> 인터넷서핑
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="wword">전화번호 통신사</td>
+                        <td>
+                            <select name="tel">
+                                <option value="sktelcom">SKT</option>
+                                <option value="etc" selected>알뜰폰</option>
+                                <option value="lgtelecom">LGT</option>
+                            </select>
+                            <input type="number" name="number" placeholder="-없이 숫자로 이어서 쓰세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="wword">생년월일</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="wword">가입한 시기</td>
+                        <td><input type="datetime-local" name="week"></td>
+                    </tr>
+                    <tr>
+                        <td class="wword">이메일</td>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="wword">하고 싶은 말</td>
+                        <td><textarea
+                            name="word" 
+                            cols="30" 
+                            rows="10"
+                            placeholder="100글자 이내로 써주세요."
+                        ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2", align="center" id="fin">
+                            <button>회원가입</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+</body>
+</html>

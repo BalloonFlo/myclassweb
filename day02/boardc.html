@@ -1,0 +1,68 @@
+<!-- ctrl + n: 새파일, ctrl + s : 저장(board.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="board.css">
+    <style>
+        button {
+            background: white;
+            color: green;
+            font-weight: bold;
+        }
+        input {
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1">
+            <tr>
+                <td class="c1" style="color:black;">항목</td>
+                <td class="c1" style="color:purple;">입력</td>
+            </tr>
+            <tr>
+                <td>번호</td>
+                <td>
+                    <input type="text" name="no">
+                </td>
+            </tr>
+            <tr>
+                <td>제목</td>
+                <td>
+                    <input type="text" name="title">
+                </td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>
+                    <input type="text" name="content">
+                </td>
+            </tr>
+            <tr>
+                <td>작성자</td>
+                <td>
+                    <input type="text" name="writer">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="foot">
+                    <button>서버로 전송</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+

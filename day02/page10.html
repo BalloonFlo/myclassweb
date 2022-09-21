@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+        }
+        #total {
+            width: 800px;
+            height: 800px;
+            background: rgb(239, 173, 147);
+        }
+        #top {
+            width: 800px;
+            height: 100px;
+            background: rgb(246, 202, 208);
+            padding: 2px;
+        }
+        #center {
+            width: 800px;
+            height: 500px;
+            padding: 30px;
+        }
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+        }
+        li:nth-child(2n) {
+            background: lightcoral;
+        }
+        li:nth-child(2n+1) {
+            background: rgb(246, 148, 148);
+        }
+        li:first-child {
+            border-radius: 10px 0px 0px 10px;
+        }
+        li:last-child {
+            border-radius: 0px 10px 10px 0px;
+        }
+        #top2 {
+            background-color: antiquewhite;
+            color: rgb(244, 139, 197);
+            border-radius: 0px 0px 20px 20px;
+            width: 150px;
+            height: 500px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="member.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="product.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="bbs.html">게시판</a>
+                </li>
+                <li>
+                    <a href="basket.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            장바구니
+        </div>
+        <div id="center">
+            내용
+        </div>
+</body>
+</html>
+<!-- 클릭관련 코드 입력하기. -->
