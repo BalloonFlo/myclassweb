@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //버튼 하나당 함수 하나를 만들어주어야 한다.
+
+        function test() {
+            //기능을 정의 한다. 함수를 정의한다.
+            alert('테스트 기능 처리')
+        }
+        function add() {
+            alert('add 기능 처리')
+            test() 
+            //함수안에서 다른 함수를 쓸 수도 있다.
+            //함수를 호출한다.
+            //함수는 여러번 호출될 수 있음.
+        }
+        function minus() {
+            alert('minus 기능 처리')
+        }
+
+    </script>
+</head>
+<body>
+
+    <!-- 클릭했을 때 test() 기능처리를 하겠다라는 의미 -->
+
+    <button onclick="test()">테스트를 해보자.</button>
+    <button onclick="add()">더해보자.</button>
+    <button onclick="minus()">빼보자.</button>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function count() {
+            id = document.getElementById("id").value
+            
+            if (id.length >= 5) {
+                result = "5글자 이상입니다. 유효합니다."
+            } else {
+                result = "5글자 미만입니다. 재입력하세요."
+            }
+        }
+        function correct() {
+            pw1 = document.getElementById("pw1").value
+            pw2 = document.getElementById("pw2").value
+            if (pw1 == pw2) {
+                result = "일치!!"
+            } else {
+                result = "불일치!!"
+            }            
+        }
+    </script>
+</head>
+<body>
+    <h3>자바 스크립트 테스트</h3>
+    <hr>
+    아이디: <input name="id" id="id">
+    <button onclick="count()"  style="background: pink; color: blue;">글자수 체크</button>
+    <br>
+    패스워드: <input name="pw1" id="pw1">
+    <br>
+    패스워드2: <input name="pw2" id="pw2">
+    <button onclick="correct()" style="background: lightgreen; color: white;">패스워드 동일</button>
+</body>
+</html>

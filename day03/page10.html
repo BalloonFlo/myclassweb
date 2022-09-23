@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        site = prompt('어디 사이트로 자주 가시나요.')
+
+        if (site == '네이버') {
+            //브라우저에게 네이버를 요청하라고 제어
+            location.href = "http://www.naver.com"
+        } else if (site == '구글') {
+            location.href = "http://www.google.com"
+        } else {
+            //위의 조건이 다 아니면
+            location.href = "http://www.daum.net"
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
