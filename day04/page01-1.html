@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#b1').click(function() {
+                id = $('#id').val()
+                if (id.length < 5) {
+                    //$('#result').html('<span style="color: red">5글자 미만입니다.</span>')
+                    $('#result').append('<span style="color: red">5글자 미만입니다.</span><br>')
+                } else {
+                    //$('#result').html('<span style="color: blue">유효함.</span>')
+                    $('#result').append('<span style="color: blue">유효함.</span><br>')
+                }
+            })
+        })
+        $(function() {
+            $('#b2').click(function() {
+                pw1 = $('#pw1').val()
+                pw2 = $('#pw2').val()
+                if(pw1 == pw2) {
+                    //$('#result2').html('<span style="color: blue">일치합니다.</span>')
+                    $('#result2').append('<span style="color: blue">일치합니다.</span><br>')
+                } else {
+                    //$('#result2').html('<span style="color: red">일치하지 않습니다.</span>')
+                    $('#result2').append('<span style="color: red">일치하지 않습니다.</span><br>')
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <h3>자바 스크립트 테스트</h3>
+    <hr>
+    아이디: <input type="text" id="id" value="test"> <br>
+    <button id="b1">입력 글자수 확인</button> <br>
+    <div id="result"></div>
+    <hr>
+    패스워드1: <input type="text" id="pw1" value="test"> <br>
+    패스워드2: <input type="text" id="pw2" value="test"> <br>
+    <button id="b2">입력 패스워드 일치 확인</button>
+    <div id="result2"></div>
+    <hr>
+</body>
+</html>

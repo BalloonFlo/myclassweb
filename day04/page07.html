@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#b1').click(function() {
+                //비동기통신(ajax)을 해라.
+                $.ajax({
+                    url : "tour.html",
+                    success : function(res) {
+                        //alert('응답받은 데이터는 ' + res)
+                        $('#d1').html('응답받은 데이터는 ' + res)
+                    } //success end
+                }) //ajax end
+            }) //click end
+        })
+        $(function() {
+            $('#b2').click(function() {
+                //비동기통신(ajax)을 해라.
+                $.ajax({
+                    url : "ok.html",
+                    success : function(res) {
+                        //alert('응답받은 데이터는 ' + res)
+                        $('#d2').html('응답받은 데이터는 ' + res)
+                    } 
+                })
+            })
+        })
+        $(function() {
+            $('#b3').click(function() {
+                //비동기통신(ajax)을 해라.
+                $.ajax({
+                    url : "weather.html",
+                    success : function(res) {
+                        //alert('응답받은 데이터는 ' + res)
+                        $('#d3').html('응답받은 데이터는 ' + res)
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <hr>
+    <button id="b1">tour.html로 비동기통신</button> <br>
+    <div id="d1"></div>
+    <hr>
+    <button id="b2">ok.html로 비동기통신</button> <br>
+    <div id="d2"></div>
+    <hr>
+    <button id="b3">weather.html로 비동기통신</button> <br>
+    <div id="d3"></div>
+    <hr>
+</body>
+</html>

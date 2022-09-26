@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#b1').click(function() {
+                food1 = $('#food1').val()
+                food2 = $('#food2').val()
+                $('#result').html('오늘은 ' + food1 + '을 먹고, 내일은 ' + food2 + '을 먹겠어!')
+            })
+        })
+        $(function() {
+            $('#b2').click(function() {
+                temp = $('#temp').val()
+                day = $('#day').val()
+                temp1 = parseInt(temp)
+                if (36> temp1 > 21) {
+                    $('#result').html('오늘은 ' + day + '인데, 가을이군!')
+                } else if (temp1 > 35) {
+                    $('#result').html('오늘은 ' + day + '인데, 여름이군!')
+                } else {
+                    $('#result').html('오늘은 ' + day + '인데, 겨울이군!')
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <table>
+        - 먹고 싶은 음식: <input type="text" id="food1"> <br>
+        - 먹기 싫은 음식: <input type="text" id="food2"> <br>
+        <button id="b1">뭐 먹지??</button>
+        <hr>
+        - 오늘의 온도는: <input type="text" id="temp"> <br>
+        - 오늘은 무슨요일인가: <input type="text" id="day"> <br>
+        <button id="b2">날씨가 어떤가요?</button>
+        <hr>
+        <div id="result"></div>
+    </table>
+</body>
+</html>

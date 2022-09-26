@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Fill space</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #accordion-resizer {
+    padding: 10px;
+    width: 350px;
+    height: 220px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+ 
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<h3 class="docs">Resize the outer container:</h3>
+ 
+<div id="accordion-resizer" class="ui-widget-content">
+  <div id="accordion">
+    <h3>나팔꽃</h3>
+    <div>
+      <p>기쁨, 결속, 덧없는 사랑, 일편단심 사랑</p>
+    </div>
+    <h3>제비꽃</h3>
+    <div>
+      <p>영원한 우정, 성실, 덕행, 겸양(謙讓), 진실한 사랑, 나를 생각해 주세요, 작은 사랑, 양보, 겸손, 겸허함, 티없이 소박, 가인, 소박, 겸허, 가난한 행복, 충실, 사색 </p>
+    </div>
+    <h3>채송화</h3>
+    <div>
+      <p>가련함, 순진, 천진난만 </p>
+      <ul>
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item three</li>
+      </ul>
+    </div>
+    <h3>튤립</h3>
+    <div>
+      <p>붉은 튤립 - 사랑의 고백 <br>
+        주황색 튤립 - 수줍음, 부끄러움 <br>
+        노란색 튤립 - 혼자 하는 사랑, 헛사랑, 사랑의 표식 <br>
+        흰색 튤립 - 실연, 용서, 사과 <br>
+        분홍색 튤립 - 애정, 배려 <br>
+        보라색 튤립 - 영원한 사랑, 영원하지 않은 사랑 <br>
+        검은색 튤립 - 당신을 저주합니다 <br>
+        망고튤립 - 수줍게 하는 사랑의 표시 </p>
+    </div>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
